@@ -1,0 +1,38 @@
+<svg width="1440" height="800" viewBox="0 0 1440 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1440" height="800" fill="#f8fafc"/>
+  <g opacity="0.1">
+    <text x="100" y="100" font-family="monospace" font-size="12" fill="#0f172a">function getLicense() {</text>
+    <text x="120" y="120" font-family="monospace" font-size="12" fill="#0f172a">return {</text>
+    <text x="140" y="140" font-family="monospace" font-size="12" fill="#0f172a">id: generateId(),</text>
+    <text x="140" y="160" font-family="monospace" font-size="12" fill="#0f172a">type: 'enterprise',</text>
+    <text x="140" y="180" font-family="monospace" font-size="12" fill="#0f172a">expiry: new Date(),</text>
+    <text x="140" y="200" font-family="monospace" font-size="12" fill="#0f172a">features: ['admin', 'api', 'export']</text>
+    <text x="120" y="220" font-family="monospace" font-size="12" fill="#0f172a">};</text>
+    <text x="100" y="240" font-family="monospace" font-size="12" fill="#0f172a">}</text>
+    
+    <text x="400" y="300" font-family="monospace" font-size="12" fill="#0f172a">class LicenseManager {</text>
+    <text x="420" y="320" font-family="monospace" font-size="12" fill="#0f172a">constructor() {</text>
+    <text x="440" y="340" font-family="monospace" font-size="12" fill="#0f172a">this.licenses = [];</text>
+    <text x="420" y="360" font-family="monospace" font-size="12" fill="#0f172a">}</text>
+    
+    <text x="420" y="380" font-family="monospace" font-size="12" fill="#0f172a">addLicense(license) {</text>
+    <text x="440" y="400" font-family="monospace" font-size="12" fill="#0f172a">this.licenses.push(license);</text>
+    <text x="420" y="420" font-family="monospace" font-size="12" fill="#0f172a">}</text>
+    <text x="400" y="440" font-family="monospace" font-size="12" fill="#0f172a">}</text>
+    
+    <text x="700" y="500" font-family="monospace" font-size="12" fill="#0f172a">const validateLicense = (key) => {</text>
+    <text x="720" y="520" font-family="monospace" font-size="12" fill="#0f172a">if (!key) return false;</text>
+    <text x="720" y="540" font-family="monospace" font-size="12" fill="#0f172a">const parts = key.split('-');</text>
+    <text x="720" y="560" font-family="monospace" font-size="12" fill="#0f172a">return parts.length === 5;</text>
+    <text x="700" y="580" font-family="monospace" font-size="12" fill="#0f172a">};</text>
+    
+    <text x="1000" y="600" font-family="monospace" font-size="12" fill="#0f172a">export function generateLicenseKey() {</text>
+    <text x="1020" y="620" font-family="monospace" font-size="12" fill="#0f172a">const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';</text>
+    <text x="1020" y="640" font-family="monospace" font-size="12" fill="#0f172a">let result = '';</text>
+    <text x="1020" y="660" font-family="monospace" font-size="12" fill="#0f172a">for (let i = 0; i < 25; i++) {</text>
+    <text x="1040" y="680" font-family="monospace" font-size="12" fill="#0f172a">result += chars.charAt(Math.floor(Math.random() * chars.length));</text>
+    <text x="1020" y="700" font-family="monospace" font-size="12" fill="#0f172a">}</text>
+    <text x="1020" y="720" font-family="monospace" font-size="12" fill="#0f172a">return result;</text>
+    <text x="1000" y="740" font-family="monospace" font-size="12" fill="#0f172a">}</text>
+  </g>
+</svg>
